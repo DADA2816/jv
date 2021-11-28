@@ -1,0 +1,139 @@
+.banner{
+    height: 700px;
+    background-color: white;
+}
+
+.selfIntro{
+    max-width: 992px;
+    line-height: 1.2;
+    position: relative;
+    h2{
+        writing-mode: vertical-lr;
+        font-size: 50px;
+        color: #72aab3;
+    }
+    .name{
+        font-size: 40px;
+        border-bottom: 2px solid white;
+    }
+    .content a{
+        color: white;
+        transition: all 0.3s;
+        &:hover,&:active{
+            color: $third;
+            transform: scale(1.05);
+        }
+    }
+    .engName{
+        font-size: 50px;
+        position: absolute;
+        bottom: 340px;
+        right: 10px;
+    }
+    .line, .fb{
+        font-size: 45px;
+        transition: all 0.3s;
+        &:hover,&:active{
+            color: $third;
+            transform: scale(1.1);
+        }
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+@include hobby-adjust{
+    .selfIntro{                 //940
+        .mob-hobby{
+            display: block;
+            margin-bottom: 25px;
+        }
+        .mob-none{
+            display: none;
+        }
+    }          
+}
+@include w900{                  //900
+    .selfIntro{
+        h2, .engName{
+            display: none;
+        }
+        .name{
+            text-align: center;
+            margin-top: 30px;
+            span{               
+                display: inline-block;
+                font-family: 'Pinyon Script', cursive;
+            }
+        }
+        .rwd900{
+            flex-direction: column-reverse;
+            margin: 0 auto;
+        }
+        .content{
+            margin-right: 0;
+        }
+    }
+}
+@include pad{
+    .banner{
+        height: 500px;
+    }
+}
+@include w520{
+    .selfIntro{
+        .name{
+            font-size: 30px;
+        }
+        .content{
+            font-size: 18px;
+        }
+        .imgContact img{
+            width: 200px;
+            height: 200px;
+        }
+        .line, .fb{
+            font-size: 35px;
+        }
+    }
+}
+@include iphone8-plus{
+    .selfIntro .content{
+        font-size: 16px;
+    }
+}
+
+////////////////////////////////////////
+.mandala{
+    max-width: 992px;
+    line-height: 1.5;
+    h2{
+        writing-mode: vertical-lr;
+        font-size: 50px;
+        color: #255359;
+    }
+    ul h3{
+        border-bottom: 1px solid #000;
+    }
+}
+@include w900{
+    .mandala h2{
+        display: none;
+    }
+}
+@include w520{
+    .mandala{
+        font-size: 18px;
+    }
+}
+@include iphone8-plus{
+    .mandala{
+        font-size: 16px;
+    }
+}

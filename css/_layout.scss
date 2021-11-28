@@ -1,0 +1,118 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;   //待修改
+    background-color: $primary;
+    img{
+        display: block;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+//header
+.header{
+    background-color: $second;
+    .container{
+        max-width: 992px;
+        margin: 0 auto;
+        h1{
+            //LOGO待修正
+            background-image: url(https://s4.aconvert.com/convert/p3r68-cdx67/amqju-zvo8f.svg);
+            width: 128px;
+            height: 38px;
+            @include hide-text;
+        }
+        .pcNavbar a ,.mobileNavbar a{
+            transition: all 0.3s;
+            &:hover,&:active{
+                color: $third;
+            }
+        }
+    }
+}
+.mobileNavbar, .mobileNavbarIcon{
+    display: none;
+}
+
+// header media query
+@include mobile{
+    .header{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    .pcNavbar{
+        display: none;
+    }
+    .mobileNavbar{
+        display: block;
+        position: absolute;
+        top: 54px;
+        right: 0px;
+        left: 0px;
+        max-height: 0px;
+        overflow: hidden;
+        text-align: center;
+        transition: max-height 1s;
+        li{
+            background-color: $mobilenav;
+        }
+    }
+    .mobileNavbarIcon{
+        display: inline-block;
+    }
+    .show .mobileNavbar{
+        max-height: 500px;
+    }
+}
+
+// main
+.backToTop{             //置頂
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+}
+@include mobile{ 
+    .backToTop{         
+        width: 45px;
+        height: 45px;
+        right: 30px;
+    }
+}
+@include w520{
+    .backToTop{         
+        width: 40px;
+        height: 40px;
+    }
+}
+
+// footer
+.bg-footer{
+    background-color: $second;
+}
+.footer{
+    max-width: 992px;
+    a{
+        transition: all 0.3s;
+        &:hover,&:active{
+            color: $third;
+        }
+    }
+}
+@include w520{
+    .footer{
+        font-size: 18px;
+    }
+}
+@include iphone8-plus{
+    .footer{
+        font-size: 16px;
+    }
+}
