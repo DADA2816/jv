@@ -103,5 +103,8 @@
 @include iphone8-plus{
     .logline{
         font-size: 16px;
+        .content{
+            height: 220px;
+        }
     }
 }
