@@ -32,7 +32,7 @@
 @include w520{
     .experience{
         font-size: 18px;
-        .title h3{
+        .title h3,.content h3{
             font-size: 20px;
         }
     }
@@ -40,7 +40,7 @@
 @include iphone8-plus{
     .experience{
         font-size: 16px;
-        .title h3{
+        .title h3,.content h3{
             font-size: 18px;
         }
     }

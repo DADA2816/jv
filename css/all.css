@@ -933,7 +933,7 @@ body a {
   .experience {
     font-size: 18px;
   }
-  .experience .title h3 {
+  .experience .title h3, .experience .content h3 {
     font-size: 20px;
   }
 }
@@ -942,7 +942,7 @@ body a {
   .experience {
     font-size: 16px;
   }
-  .experience .title h3 {
+  .experience .title h3, .experience .content h3 {
     font-size: 18px;
   }
 }
