@@ -1,0 +1,47 @@
+.experience{
+    max-width: 992px;
+    line-height: 1.2;
+    .title img{
+        width: 100px;
+        height: 100px;
+    }
+    .content{
+        border-radius: 30px;
+        animation: bounce;
+        animation-duration: 1.3s;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.01);
+        }
+    }
+}
+@include mobile{
+    .experience{
+        padding-top: 130px;
+        .title{
+            margin-bottom: 15px;
+            img{
+                margin: 0 auto;
+            }
+        }
+        li{
+            display: block;
+        }
+    }
+}
+@include w520{
+    .experience{
+        font-size: 18px;
+        .title h3{
+            font-size: 20px;
+        }
+    }
+}
+@include iphone8-plus{
+    .experience{
+        font-size: 16px;
+        .title h3{
+            font-size: 18px;
+        }
+    }
+}
