@@ -462,6 +462,12 @@ body a {
   }
 }
 
+@media (max-width: 414px) {
+  .footer {
+    font-size: 16px;
+  }
+}
+
 .banner {
   height: 700px;
 }
@@ -616,7 +622,7 @@ body a {
 
 .comments {
   max-width: 992px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .comments .person img {
@@ -764,6 +770,17 @@ body a {
           transform: scale(1.01);
 }
 
+.portfolio span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.portfolio span:hover {
+  color: #A5DEE4;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 .portfolio h3 {
   font-size: 30px;
 }
@@ -855,7 +872,7 @@ body a {
 
 .experience {
   max-width: 992px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .experience .title img {

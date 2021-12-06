@@ -14,14 +14,21 @@
     .content{
         max-width: 350px;
     }
-    a{  
-    color: black;
-    transition: all 0.3s;
+    a{
+        color: black;
+        transition: all 0.3s;
         &:hover{
             color: $third;
             transform: scale(1.01);
         }
     }
+    span{
+        transition: all 0.3s;
+            &:hover{
+                color: $third;
+                transform: scale(1.01);
+            }
+        }
     h3{
         font-size: 30px;
     }
