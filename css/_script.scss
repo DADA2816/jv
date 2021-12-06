@@ -17,6 +17,7 @@
 }
 @include mobile{
     .comments{
+        padding-top: 130px;
         .person{
             margin-bottom: 15px;
             img{
@@ -57,7 +58,6 @@
         }
     }
     .content{
-        background-color: white;
         border-radius: 0 0 30px 30px;
         height: 250px;
         a{

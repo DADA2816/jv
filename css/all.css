@@ -116,6 +116,10 @@ table {
   margin-bottom: 50px;
 }
 
+.ml-10 {
+  margin-left: 50px;
+}
+
 .mb-15 {
   margin-bottom: 75px;
 }
@@ -126,6 +130,10 @@ table {
 
 .ml-15 {
   margin-left: 75px;
+}
+
+.mb-20 {
+  margin-bottom: 100px;
 }
 
 .mr-20 {
@@ -194,6 +202,30 @@ table {
 
 .pr-5 {
   padding-right: 25px;
+}
+
+.pt-10 {
+  padding-top: 50px;
+}
+
+.pb-10 {
+  padding-bottom: 50px;
+}
+
+.pl-10 {
+  padding-left: 50px;
+}
+
+.pr-10 {
+  padding-right: 50px;
+}
+
+.pt-16 {
+  padding-top: 80px;
+}
+
+.pb-16 {
+  padding-bottom: 80px;
 }
 
 .p-normal {
@@ -304,6 +336,10 @@ table {
   background-color: #78C2C4;
 }
 
+.bg-white {
+  background-color: #FFF;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -311,7 +347,7 @@ table {
 
 body {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif,'-apple-system-ui-serif', 'ui-serif';
   background-color: #6699A1;
 }
 
@@ -434,7 +470,6 @@ body a {
 
 .banner {
   height: 700px;
-  background-color: white;
 }
 
 .selfIntro {
@@ -623,6 +658,9 @@ body a {
 }
 
 @media (max-width: 767px) {
+  .comments {
+    padding-top: 130px;
+  }
   .comments .person {
     margin-bottom: 15px;
   }
@@ -667,7 +705,6 @@ body a {
 }
 
 .logline .content {
-  background-color: white;
   border-radius: 0 0 30px 30px;
   height: 250px;
 }
@@ -722,6 +759,191 @@ body a {
   }
   .logline .content {
     height: 220px;
+  }
+}
+
+.portfolio .intro {
+  max-width: 992px;
+}
+
+.portfolio .intro-1 {
+  padding: 0px 50px 80px;
+}
+
+.portfolio .intro-2 {
+  padding: 80px 50px;
+}
+
+.portfolio .intro-3 {
+  padding: 80px 50px 0px;
+}
+
+.portfolio .content {
+  max-width: 350px;
+}
+
+.portfolio a {
+  color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.portfolio a:hover {
+  color: #A5DEE4;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.portfolio h3 {
+  font-size: 30px;
+}
+
+.portfolio p {
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .portfolio .content {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio {
+    padding-top: 130px;
+  }
+  .portfolio .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio iframe {
+    max-width: 520px;
+    margin: 0 auto 50px;
+  }
+  .portfolio .content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .portfolio h3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 630px) {
+  .portfolio iframe {
+    max-width: 480px;
+    max-height: 300px;
+  }
+  .portfolio .intro-1 {
+    padding: 0px 0px 80px;
+  }
+  .portfolio .intro-2 {
+    padding: 80px 0px;
+  }
+  .portfolio .intro-3 {
+    padding: 80px 0px 0px;
+  }
+  .portfolio .content {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolio iframe {
+    max-width: 380px;
+    max-height: 230px;
+    margin-bottom: 30px;
+  }
+  .portfolio h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .portfolio p {
+    font-size: 18px;
+  }
+  .portfolio .intro-1 {
+    padding: 0px 0px 60px;
+  }
+  .portfolio .intro-2 {
+    padding: 60px 0px;
+  }
+  .portfolio .intro-3 {
+    padding: 60px 0px 0px;
+  }
+}
+
+@media (max-width: 414px) {
+  .portfolio iframe {
+    max-width: 340px;
+  }
+  .portfolio .content {
+    padding: 0px 30px;
+  }
+  .portfolio h3 {
+    font-size: 18px;
+  }
+  .portfolio p {
+    font-size: 16px;
+  }
+}
+
+.experience {
+  max-width: 992px;
+  line-height: 1.2;
+}
+
+.experience .title img {
+  width: 100px;
+  height: 100px;
+}
+
+.experience .content {
+  border-radius: 30px;
+  -webkit-animation: bounce;
+          animation: bounce;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.experience .content:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+@media (max-width: 767px) {
+  .experience {
+    padding-top: 130px;
+  }
+  .experience .title {
+    margin-bottom: 15px;
+  }
+  .experience .title img {
+    margin: 0 auto;
+  }
+  .experience li {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .experience {
+    font-size: 18px;
+  }
+  .experience .title h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .experience {
+    font-size: 16px;
+  }
+  .experience .title h3 {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=all.css.map */

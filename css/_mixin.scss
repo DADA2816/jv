@@ -51,6 +51,9 @@ $mobilenav: #336774;
 .mb-10{
     margin-bottom: 50px;
 }
+.ml-10{
+    margin-left: 50px;
+}
 .mb-15{
     margin-bottom: 75px;
 }
@@ -59,6 +62,9 @@ $mobilenav: #336774;
 }
 .ml-15{
     margin-left: 75px;
+}
+.mb-20{
+    margin-bottom: 100px;
 }
 .mr-20{
     margin-right: 100px;
@@ -112,6 +118,24 @@ $mobilenav: #336774;
 }
 .pr-5{
     padding-right: 25px;
+}
+.pt-10{
+    padding-top: 50px;
+}
+.pb-10{
+    padding-bottom: 50px;
+}
+.pl-10{
+    padding-left: 50px;
+}
+.pr-10{
+    padding-right: 50px;
+}
+.pt-16{
+    padding-top: 80px;
+}
+.pb-16{
+    padding-bottom: 80px;
 }
 .p-normal{
     padding: 80px 50px;
@@ -200,6 +224,9 @@ $mobilenav: #336774;
 }
 .bg-lightgreen{
     background-color: #78C2C4;
+}
+.bg-white{
+    background-color: #FFF;
 }
 
 // hide-text
