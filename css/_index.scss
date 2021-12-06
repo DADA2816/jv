@@ -102,11 +102,6 @@
         }
     }
 }
-@include iphone8-plus{
-    .selfIntro .content{
-        font-size: 16px;
-    }
-}
 
 ////////////////////////////////////////
 .mandala{
@@ -129,10 +124,5 @@
 @include w520{
     .mandala{
         font-size: 18px;
-    }
-}
-@include iphone8-plus{
-    .mandala{
-        font-size: 16px;
     }
 }

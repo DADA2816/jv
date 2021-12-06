@@ -3,7 +3,7 @@
 }
 body{
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif,'-apple-system-ui-serif', 'ui-serif';   //待修改
+    font-family: 'Times New Roman', Times, serif,'Source Han Serif','宋體';
     background-color: $primary;
     img{
         display: block;
@@ -103,10 +103,5 @@ body{
 @include w520{
     .footer{
         font-size: 18px;
-    }
-}
-@include iphone8-plus{
-    .footer{
-        font-size: 16px;
     }
 }
