@@ -44,9 +44,27 @@
     line-height: 1.5;
     li{
         width: 30%;
-        img{
-            height: 200px;
+        .img-1{
+            height: 170px;
             border-radius: 30px 30px 0 0;
+            background-image:url(../img/偷光.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img-2{
+            height: 170px;
+            border-radius: 30px 30px 0 0;
+            background-image:url(../img/shoot.jpg);
+            border-bottom: 1px solid black;
+            background-position: center;
+            background-size: cover;
+        }
+        .img-3{
+            height: 170px;
+            border-radius: 30px 30px 0 0;
+            background-image:url(../img/回.jpg);
+            background-position: center;
+            background-size: cover;
         }
     }
     .content{
@@ -72,7 +90,11 @@
         li{
             width: 75%;
             margin: 0 auto 75px;
+            .img-1,.img-2,.img-3{
+                height: 300px;
+            }
         }
+
         .content{
             height: 220px;
             a{
@@ -86,6 +108,9 @@
         font-size: 18px;
         li{
             width: 90%;
+            .img-1,.img-2,.img-3{
+                height: 200px;
+            }
         }
         .content{
             height: 200px;
